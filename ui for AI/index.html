@@ -1,56 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UI for AI</title>
 </head>
+
 <body>
-    <p> enter the image dimensional too test <br> 👀</p>
 
-    
-<div>
-<textarea class="text-a" name="" id="" cols="30" rows="10"></textarea>
-
-</div>
+    <div id="one">
+        <p> enter the image dimensional too test <br> 👀</p>
 
 
+        
+            <div id="divin">
+                <input type="text" class="text-a" name="cont" id="" cols="30" rows="10"></input>
 
+            </div>
+            <button type="submit" class="sbtn" onclick="myFunction()" >Submit</button>
+        
+    </div>
 
+    <div id="two">
 
+        <div id="div2">
 
+            <div id="display-image"></div>
+
+        </div>
+
+    </div>
 
 
 
     <style>
+        #divin {
 
-div{
-    text-align: center;
-}
-.text-a {
-    width: 722px; height: 103px;
-    outline: #00ffff26   18px solid;
-    border: #9f1818  2px solid;
-}
+            text-align: center;
+        }
+
+        .text-a {
+            width: 722px;
+            height: 103px;
+            outline: #00ffff26 18px solid;
+            border: #9f1818 2px solid;
+        }
+
+        .sbtn {
+
+            margin-left: 48%;
+            margin-bottom: 55px;
+            margin-top: 31px;
+            background-color: #9F1818;
+            color: white;
+            width: 80px;
+            height: 38px;
+            border-radius: 15px;
+        }
 
         p {
-      flex: 0 0 100%;
-      color: #9F1818;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      text-transform: uppercase;
-      font-weight: 800;
-      text-align: center;
-      letter-spacing: 3px;
-      -webkit-background-clip: text;
-      background-image: linear-gradient(to left, transparent, rgb(0, 0, 0), rgb(255, 255, 255), rgb(109, 0, 0), transparent);
-      background-repeat: no-repeat;
-      background-size: 200%;
-      background-position: -100%;
-      animation: loadingText 2s linear alternate infinite;
-      font-size: 40px;
-    }
+            flex: 0 0 100%;
+            color: #9F1818;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-transform: uppercase;
+            font-weight: 800;
+            text-align: center;
+            letter-spacing: 3px;
+            -webkit-background-clip: text;
+            background-image: linear-gradient(to left, transparent, rgb(0, 0, 0), rgb(255, 255, 255), rgb(109, 0, 0), transparent);
+            background-repeat: no-repeat;
+            background-size: 200%;
+            background-position: -100%;
+            animation: loadingText 2s linear alternate infinite;
+            font-size: 40px;
+        }
+
+
+
+        #div2 {
+
+            text-align: center;
+        }
+
+
+        #image-input {
+
+            padding: 40px;
+        }
+
+
+        #display-image {
+
+            width: 500px;
+            height: 525px;
+            border: 1px solid black;
+            background-position: center;
+            background-size: cover;
+            border: 4px #005f73 dashed;
+            margin-left: 31%;
+        }
+
+        #two{
+            display: none;
+        }
     </style>
+
+
+
+    <script>
+function myFunction(){
+ document.getElementById("two").style.display = 'block';
+
+
+}
+
+    </script>
 </body>
 
 
